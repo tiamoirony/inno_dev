@@ -1,0 +1,37 @@
+.switch {
+    position: relative;
+    width: 130px;
+    height: 50px;
+    margin: 0px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("./images/night.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%), 0 6px 4px rgb(0 0 0 / 20%);
+    transition: background-image .7s ease-in-out;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .switch:checked {
+    background-image: url("./images/day.png");
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .switch:after {
+    content: '';
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transform: translateX(0px);
+    animation: off .7s forwards cubic-bezier(.8, .5, .2, 1.4);
+    box-shadow: inset 5px -5px 4px rgba(53, 53, 53, 0.3);
+  }

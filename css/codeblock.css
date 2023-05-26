@@ -1,0 +1,245 @@
+/******************************
+* code block
+******************************/
+pre .codeLabel {
+    font-family: JetBrainsMono;
+    background: linear-gradient(#2c2c2c, #1b1b1b);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+  }
+  
+  .codeLabel .codelang {
+    margin-right: 15px;
+    height: 2em;
+    padding-top: 4px;
+    transition: all 0.7s;
+  }
+  
+  .codelang span {
+    font-weight: 600;
+    font-size: 15px;
+    color: snow;
+  }
+  
+  #tt-body-page .article-view table.hljs-ln td.hljs-ln-line,
+  #tt-body-page .article-view table th {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+  
+  .codelang span.language {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  
+  .hljs-copy-button {
+    background-color: #222;
+  }
+  
+  .hljs-copy-button:hover {
+    cursor: pointer;
+  }
+  
+  .codeLabel .traffic-lights {
+    width: 60px;
+    float: left;
+    margin-left: 15px;
+  }
+  
+  .traffic-light:hover {
+    cursor: pointer;
+  }
+  
+  .traffic-light div {
+    display: inline;
+    padding-left: 10px;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+  }
+  
+  .focus .traffic-lights>.traffic-light-close,
+  .traffic-lights:hover>.traffic-light-close,
+  .traffic-lights:active>.traffic-light-close {
+    background-color: #ff6159;
+  }
+  
+  .focus .traffic-lights>.traffic-light-close:active:hover,
+  .traffic-lights:hover>.traffic-light-close:active:hover,
+  .traffic-lights:active>.traffic-light-close:active:hover {
+    background-color: #bf4942;
+  }
+  
+  .focus .traffic-lights>.traffic-light-minimize,
+  .traffic-lights:hover>.traffic-light-minimize,
+  .traffic-lights:active>.traffic-light-minimize {
+    background-color: #ffbd2e;
+  }
+  
+  .focus .traffic-lights>.traffic-light-minimize:active:hover,
+  .traffic-lights:hover>.traffic-light-minimize:active:hover,
+  .traffic-lights:active>.traffic-light-minimize:active:hover {
+    background-color: #bf8e22;
+  }
+  
+  .focus .traffic-lights>.traffic-light-maximize,
+  .traffic-lights:hover>.traffic-light-maximize,
+  .traffic-lights:active>.traffic-light-maximize {
+    background-color: #28c941;
+  }
+  
+  .focus .traffic-lights>.traffic-light-maximize:active:hover,
+  .traffic-lights:hover>.traffic-light-maximize:active:hover,
+  .traffic-lights:active>.traffic-light-maximize:active:hover {
+    background-color: #1d9730;
+  }
+  
+  .focus .traffic-light:before,
+  .focus .traffic-light:after {
+    visibility: hidden;
+  }
+  
+  .focus:hover .traffic-light:before,
+  .focus:active .traffic-light:before,
+  .focus:hover .traffic-light:after,
+  .focus:active .traffic-light:after {
+    visibility: visible;
+  }
+  
+  .traffic-light {
+    border-radius: 100%;
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    margin-right: 5px;
+    margin-top: 5px;
+    position: relative;
+    outline: none;
+  }
+  
+  .traffic-light:before,
+  .traffic-light:after {
+    content: '';
+    position: absolute;
+    border-radius: 1px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .traffic-light-close:before,
+  .traffic-light-close:after {
+    background-color: #4d0000;
+    width: 8px;
+    height: 1px;
+  }
+  
+  .traffic-light-close:before {
+    transform: rotate(45deg);
+  }
+  
+  .traffic-light-close:after {
+    transform: rotate(-45deg);
+  }
+  
+  .traffic-light-close:active:hover:before,
+  .traffic-light-close:active:hover:after {
+    background-color: #190000;
+  }
+  
+  .traffic-light-minimize:before {
+    background-color: #995700;
+    width: 8px;
+    height: 1px;
+  }
+  
+  .traffic-light-minimize:active:hover:before {
+    background-color: #592800;
+  }
+  
+  .traffic-light-maximize:before {
+    background-color: #006500;
+    width: 6px;
+    height: 6px;
+  }
+  
+  .traffic-light-maximize:after {
+    background-color: #28c941;
+    width: 10px;
+    height: 2px;
+    transform: rotate(45deg);
+  }
+  
+  .traffic-light-maximize:active:hover:before {
+    background-color: #003200;
+  }
+  
+  .traffic-light-maximize:active:hover:after {
+    background-color: #1d9730;
+  }
+  
+  pre {
+    transition: all 0.5s;
+    height: 100%;
+  }
+  
+  pre .hljs-copy-button {
+    top: 3em;
+  }
+  
+  #tt-body-page .article-view pre.minimize,
+  #tt-body-page .article-view pre.close {
+    height: 35px;
+    padding: 0px;
+  }
+  
+  #tt-body-page .article-view pre.close {
+    width: 80px;
+  }
+  
+  #tt-body-page .article-view pre.minimize code,
+  #tt-body-page .article-view pre.close code,
+  #tt-body-page .article-view pre.minimize .hljs-copy-button,
+  #tt-body-page .article-view pre.close .hljs-copy-button {
+    display: none;
+  }
+  
+  .codeLabel.minimize {
+    border-radius: 10px;
+  }
+  
+  .codeLabel.close {
+    border-radius: 10px;
+  }
+  
+  .codeLabel.close .codelang {
+    width: 0px;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  .codeLabel.close .traffic-light-close:hover {
+    cursor: default;
+  }
+  
+  .codeLabel.minimize .traffic-light-minimize:hover {
+    cursor: default;
+  }
+  
+  .codeLabel.maximize .traffic-light-maximize:hover {
+    cursor: default;
+  }
+
+/******************************
+* code block end
+******************************/

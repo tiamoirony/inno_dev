@@ -1,0 +1,4 @@
+Apr  9 05:57:41 G15v2-SD0 rc.local[590]: gDetectCamera:250 run| #033[37mDEBUG   #033[0m | #033[37m1Plate : 다나다더0다  (77.13%)#033[0m
+Apr  9 06:53:14 G15v2-SD0 rc.local[590]: gDetectCamera:250 run| #033[37mDEBUG   #033[0m | #033[37m1Plate : 다나다다0다  (75.25%)#033[0m
+Apr  9 08:04:56 G15v2-SD0 rc.local[590]: gDetectCamera:250 run| #033[37mDEBUG   #033[0m | #033[37m1Plate : 다다다다고다다더다 (77.77%)#033[0m
+Apr  9 15:34:31 G15v2-SD0 rc.local[590]: gDetectCamera:250 run| #033[37mDEBUG   #033[0m | #033[37m1Plate : 다버다다다다다다다 (75.65%)#033[0m
